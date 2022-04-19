@@ -1,0 +1,345 @@
+/*手机详情页专有样式*/
+.crumb_wrap {
+    margin-top: 10px;
+}
+.crumb_wrap a {
+    margin: 0 10px;
+}
+.crumb_wrap .coa {
+    margin-left: 0;
+}
+/*详细模块开始*/
+.product_intro {
+    height: 590px;
+    margin-top: 10px;
+}
+.preview_img {
+	position: relative;
+    border: 1px solid #cccccc;
+}
+.mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	background-color:#fede4f;
+	opacity: 0.5;
+	border: 1px solid #CCCCCC;
+	cursor: move;
+}
+.big {
+	display: none;
+	position: absolute;
+	left: 410px;
+	top: 0;
+	width: 500px;
+	height: 500px;
+	background-color: pink;
+	overflow: hidden;
+	z-index: 999;
+}
+.big img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 800px;
+}
+.preview_list {
+    position: relative;
+    height: 60px;
+    margin-top: 40px;
+}
+.arrow_prev,
+.arrow_next{
+    /*一定是 , 并集选择器*/
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+}
+.arrow_prev {
+    left: 0;
+    background: url("../images/arrow-prev.png") no-repeat;
+}
+.arrow_next {
+    right: 0;
+    background: url("../images/arrow-next.png") no-repeat;
+}
+.list_item {
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+}
+.list_item li{
+    overflow: hidden;
+    float: left;
+    width: 56px;
+    height: 56px;
+    border: 2px solid transparent;!important;
+    margin: 0 2px;
+}
+.list_item .current {
+    border: 2px solid #c81623;
+}
+/*右半模块*/
+.itemInfo_wrap {
+    width: 718px;
+}
+.itemInfo_wrap h3 {
+    height: 30px;
+    font-size: 16px;
+}
+.news {
+    height: 32px;
+    color: #e22228;
+}
+.summary_price,
+.summary_promotion {
+    position: relative;
+    padding: 10px 0;
+    background-color: #fee9eb;
+}
+.summary a.current {
+    border-color: #c81623;
+}
+.summary .dl {
+    overflow: hidden;
+}
+.summary dt,
+.summary dd {
+    float: left;!important;
+}
+.summary dl dt {
+    width: 60px;
+    padding-left: 10px;
+    line-height: 36px;
+    margin-right: 10px;
+}
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+.summary_price dd a {
+    color: #c81623;
+}
+.remark {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.summary dl {
+    overflow: hidden;
+}
+.summary_promotion {
+    padding-top: 0;
+}
+.summary_promotion dd {
+    width: 450px;
+    line-height: 36px;
+}
+.summary_promotion em {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+}
+.summary_support dd {
+    line-height: 36px;
+}
+.choose_color a {
+    display: inline-block;
+    width: 80px;
+    height: 41px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+    line-height: 41px;
+}
+#current {
+    margin-left: 10px;
+}
+.choose_version {
+    margin: 10px 0;
+}
+.choose_version a,
+.choose_type a {
+    display: inline-block;
+    height: 32px;
+    padding: 0 12px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+    line-height: 32px;
+}
+.choose_btns {
+    overflow: hidden;
+    margin-top: 20px;
+}
+.choose_amount {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 46px;
+}
+.choose_amount input {
+    width: 35px;
+    height: 44px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+button, input {
+    font-family: 'Microsoft YaHei','Heiti SC',tahoma,arial,'Hiragino Sans GB',\5B8B体,sans-serif;
+    outline: none;
+}
+.add {
+    top: 0;
+}
+.add,
+.reduce {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 22px;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 22px;
+}
+.reduce {
+    border-bottom: 1px solid #cccccc;
+    bottom: 2px;
+    cursor: not-allowed;
+    /*禁止鼠标样式*/
+}
+.addcar {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 10px;
+    font-weight: 700;
+}
+/*详细模块结束*/
+/*产品细节模块开始*/
+.product_detail {
+    margin-bottom: 50px;
+}
+.aside {
+    width: 208px;
+    border: 1px solid #cccccc;
+}
+.tab_list {
+    overflow: hidden;
+    height: 33px;
+    background-color: #f1f1f1;
+}
+.tab_list ul {
+    overflow: hidden;
+}
+.tab_list li {
+    float: left;
+    border-bottom: 1px solid #cccccc;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+}
+.first_tab {
+    width: 103px;
+}
+.tab_con {
+    padding: 0 8px;
+}
+.tab_list li {
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+}
+.second_tab {
+    width: 103px;
+    border-left: 1px solid #cccccc;
+}
+.tab_list .current {
+    background-color: #fff;
+    border-bottom: 0 solid transparent;
+    line-height: 33px;
+    color: red;
+}
+.aside_price {
+    padding: 10px 0;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.tab_con li {
+    border-bottom: 1px solid #cccccc;
+}
+.tab_con li h5 {
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+.as_addcar {
+    display: block;
+    width: 90px;
+    height: 27px;
+    background-color: #fff;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 10px auto;
+}
+.tab_con .tab_con_finally {
+    border-bottom: 0 solid transparent;
+}
+/*detail右半模块*/
+.detail {
+    width: 978px;
+    margin-left: 10px;
+}
+.detail_tab_con {
+    /*overflow: hidden;*/
+}
+.detail_tab_list {
+    height: 39px;
+    width: 978px;
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+}
+.detail_tab_list ul li {
+    float: left;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.detail_tab_list .current {
+    background-color: #c81623;
+    color: #ffffff;
+}
+.item_info {
+    padding: 20px 0 0 20px;
+}
+.detail_tab_con .item ul li {
+    display: block;
+}
+.more {
+    float: right;
+    font-weight: 700;
+}
+.detail_tab_con .item img {
+    float: left;
+    width: 970px;
+}
+/*产品细节模块结束*/

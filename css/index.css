@@ -1,0 +1,288 @@
+.w {
+	width:1200px;
+	margin: 0 auto;
+}
+/* main 模块制作 */
+.main {
+	width: 980px;
+	height: 455px;
+	/* zs */
+	/* background-color: pink; */
+	margin-left: 220px;
+	margin-top: 10px;
+}
+
+.focus {
+	position: relative;
+	float: left;
+	width: 720px;
+	height: 455px;
+	/* zs */
+	/* background-color: #3967FF; */
+	overflow: hidden;
+}
+.focus ul {
+	width: 600%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.focus li {
+	float: left;
+	
+}
+.focus li img {
+	width: 720px;
+	height: 455px;
+}
+.arrow_l,
+.arrow_r {
+	display: none;
+	position: absolute;
+	top: 50%;
+	width: 24px;
+	height: 40px;
+	margin-top: -20px;
+	border-radius: 10% 60% 60% 10%;
+	background-color: rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'icomoon';
+	z-index: 999;
+}
+.arrow_r {
+	right: 0;
+	border-radius: 60% 10% 10% 60%;
+}
+ol {
+	padding: 0;
+	margin: 0;
+}
+.circle {
+	position: absolute;
+	list-style: none;
+	bottom: 10px;
+	left: 50%;
+	width: 74px;
+	height: 10px;
+}
+.circle li {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 1px solid rgb(254,254,254);
+	float: left;
+	margin:0 5px;
+	/* background-color: #fff; */
+}
+.circle .current,
+.circle li:hover{
+	background-color: #fff;
+}
+.newsflash {
+	float: right;
+	width: 250px;
+	height: 455px;
+	/* zs */
+	/* background-color: #55A532; */
+}
+.news {
+	height: 165px;
+	border: 1px solid #E4E4E4;
+	/* zs */
+	background-color: oldlace;
+}
+.news .new_hd {
+	height: 33px;
+	line-height: 33px;
+	padding: 0 15px;
+	border-bottom: 1px dotted #E4e4e4;
+}
+.new_hd h5 {
+	float: left;
+	font-size: 14px;
+}
+.new_hd .more {
+	float: right;
+}
+.new_hd .more::after {
+	content: '\e903';
+	font-family: 'icomoon';
+}
+.new_bd {
+	padding: 5px 15px 0;
+}
+.new_bd ul li {
+	height: 24px;
+	line-height: 24px;
+	/* 溢出隐藏 */
+	overflow: hidden;
+	/* 文字一行显示 */
+	white-space: nowrap;
+	/* ...显示 */
+	text-overflow: ellipsis;
+}
+.lifeservice {
+	height: 209px;
+	border: 1px solid #E4E4E4;
+	border-top: 0;
+	/* 把多余的切掉 */
+	overflow: hidden;
+	/* zs */
+	background-color: #449FDB;
+}
+.lifeservice ul {
+	width: 256px;
+}
+.lifeservice ul li {
+	float: left;
+	width: 63px;
+	height: 71px;
+	border-right: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+	text-align: center;
+} 
+.lifeservice ul li i {
+	display: inline-block;
+	width: 24px;
+	height: 28px;
+	margin-top: 12px;
+	background: url(../images/icons.png) no-repeat -17px -13px;
+	/* zs */
+	/* background-color: pink; */
+}
+.bargain {
+	margin-top: 5px;
+}
+/* recom 模块 */
+.recom {
+	height: 163px;
+	
+	background-color: #ebebeb;
+	margin-top: 12px;
+}
+.recom_hd {
+	float: left;
+	width: 205px;
+	height: 163px;
+	text-align: center;
+	padding-top: 30px;
+	background-color: #5c5251;
+}
+.recom_hd h4 {
+	color: #fff;
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.recom_bd {
+	float: left;
+}
+.recom_bd ul li {
+	position: relative;
+	float: left;
+}
+.recom_bd ul li img {
+	width: 248px;
+	height: 163px;
+}
+/* after伪元素是行内元素 没有大小 要转换模式   但定位absolute 不占位，定位可以压住 记得子绝父相  
+	nth-child(-n+3)从后往前选  0--3  1--2  2--1  3-0  0不选
+*/
+.recom_bd ul li:nth-child(-n+3)::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 1px;
+	height: 145px;
+	background-color: #ddd;
+}
+/* 电梯层 */
+.fixedtool {
+	position: fixed;
+	left: 34px;
+	top: 50%;
+	width:66px ;
+	background-color: #fff;
+	display: none;
+}
+.fixedtool li {
+	list-style: none;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+}
+.fixedtool li:hover,
+.current{
+	background-color: orangered;
+	color: #fff;
+}
+/*楼层区    css */
+.floor .w{
+	margin-top: 30px;
+}
+.box_hd {
+	height: 30px;
+	border-bottom: 2px solid #C81623;
+}
+.box_hd h3 {
+	float: left;
+	font-size: 18px;
+	color: #C81623;
+	font-weight: 400;
+}
+.tab_list {
+	float: right;
+}
+.tab_list ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+.tab_list ul li a {
+	margin: 0 15px;
+}
+.box_bd {
+	height: 361px;
+	/* zs */
+	/* background-color: #0077AA; */
+}
+.tab_list_item>div {
+	float: left;
+}
+.col_210 {
+	width: 210px;
+	height: 360px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+.col_210 ul li {
+	float: left;
+	width: 85px;
+	height: 34px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	line-height: 33px;
+	margin-left: 12px;
+}
+
+.col_329 { 
+	width: 329px;
+}
+.col_221{
+	width: 221px;
+	border-right: 1px solid #ccc;
+}
+.col_219{
+	width: 219px;
+}
+.bb{
+	/* 如果a包含有宽度的盒子，a要转化为块级元素 */
+	display: block;
+	border-bottom: 1px solid #ccc;
+}

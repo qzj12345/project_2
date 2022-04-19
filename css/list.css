@@ -1,0 +1,138 @@
+/* 列表专有css */
+.nav {
+	overflow: hidden;
+}
+
+.sk {
+	position: absolute;
+	left: 190px;
+	top: 40px;
+	border-left: 1px solid #C81623;
+	padding: 3px 0 0 5px;
+}
+
+.sk_list {
+	float: left;
+}
+
+.sk_list ul li {
+	float: left;
+}
+
+.sk_list ul li a {
+	display: block;
+	line-height: 47px;
+	padding: 0 30px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.sk_con {
+	float: left;
+}
+
+.sk_con ul li {
+	float: left;
+}
+
+.sk_con ul li a {
+	display: block;
+	line-height: 47px;
+	padding: 0 30px;
+	font-size: 14px;
+	color: #000000;
+}
+
+.sk_con ul li:last-child a::after {
+	content: '\e900';
+	font-family: 'icomoon';
+}
+
+/* 列表页主体部分start */
+.sk_hd img {
+	width: 1200px;
+}
+/* .sk_bd {
+	width: 1200px;
+	height: 1000px;
+} */
+.sk_bd ul {
+	float: left;
+	margin-right:10px;
+}
+.sk_bd ul:nth-child(4n) {
+	margin-right: 0;
+}
+.sk_bd ul li {
+	width: 290px;
+	height: 475px;
+	text-align: center;
+	/* 注意：不想让边框影响盒子大小，就在盒子加上变快，等经过时改变边框颜色即可 */
+	border: 1px solid transparent;
+}
+.sk_bd ul li:hover {
+	border: 1px solid #C81623;
+}
+.sk_bd ul li img {
+	width: 288px;
+}
+
+.sk_bd ul li p {
+	font-size: 16px;
+	color: #666;
+}
+
+.sk_bd ul li span {
+	color: #dd4444;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.sk_bd ul li i {
+	text-decoration: line-through;
+	font-size: 16px;
+}
+.yishou{
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+}
+.yi{
+	float: left;
+	margin-left:23px;
+}
+.bar {
+	float:left;
+	width: 100px;
+	height: 10px;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 1px;
+	margin: 6px 8px 0;
+}
+.bar_in {
+	width: 80%;
+	height: 100%;
+	background-color: red;
+/* 	transition: all .3s; */
+	
+}
+.sheng{
+	float: left;
+}
+.sk_bd ul li button {
+	margin-top: 8px;
+	width: 100%;
+	height: 50px;
+	background-color:  #b2191b;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	border: 1px solid black;
+}
+.sk_bd::after{
+	content: "";
+	display: block;
+	clear: both;
+ }
